@@ -1,0 +1,43 @@
+// VARIABLES
+$bg-color: hsl(225, 100%, 94%);
+$btn-color: hsl(245, 75%, 52%);
+$bg-light: hsl(225, 100%, 98%);
+$blue-light: hsl(224, 23%, 55%);
+$blue-dark: hsl(223, 47%, 23%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 1rem auto 1rem auto;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.grey-p {
+  color: $blue-light;
+  width: 80%;
+  margin: auto;
+  line-height: 1.5;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+  @media screen and (min-width: 810px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
